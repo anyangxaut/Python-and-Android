@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.example.pythontest.MainActivity" >
+
+   	<LinearLayout 
+        android:id="@+id/layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:orientation="vertical" >
+		
+	    <LinearLayout 
+	        android:id="@+id/state_layout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:orientation="horizontal" >
+		    
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="18sp"
+		        android:text="@string/connectionstate" />
+	        
+	        <TextView
+		        android:id="@+id/connect_state"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="18sp"
+		        android:text="@string/connect_state"/>
+	
+		</LinearLayout>
+    
+	</LinearLayout> 
+    
+    <Button 
+        android:id="@+id/con_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/layout"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:text="@string/send_button" />
+    
+    <Button 
+        android:id="@+id/btn_goto_temperature"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/con_button"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/goto_temperature" />
+    
+    <TextView
+         android:id="@+id/messtr_tv"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/btn_goto_temperature"
+         android:layout_marginTop="30dp"
+         android:layout_marginLeft="30dip"
+         android:textSize="18sp"
+         android:text="@string/messtr_tv"/>
+    
+    <EditText 
+       	 android:layout_width="300dip"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/messtr_tv"
+         android:layout_marginTop="10dp"
+         android:layout_centerHorizontal="true"
+       	 android:id="@+id/messtr"
+       	 android:layout_marginLeft="30dip"/>
+    
+    <LinearLayout 
+	        android:id="@+id/button_layout"
+	        android:layout_marginTop="20dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/messtr"
+		    android:gravity="center_horizontal"
+		    android:orientation="horizontal" >
+	    
+        <Button 
+       		 android:id="@+id/ok"
+       		 android:layout_width="100dip"
+       		 android:layout_height="wrap_content"
+        	 android:text="@string/send"
+        	 android:textSize="18sp"
+       		 android:layout_marginLeft="30dip"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_marginLeft="30dip"
+            android:textSize="18sp" />
+	    
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/padding"
+        android:layout_height="2dip" 
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/button_layout"
+        android:background="#FF909090" />
+    
+    <TextView
+        android:id="@+id/recv_msg"
+        android:layout_below="@id/padding"
+        android:layout_marginTop="30dp"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+
+</RelativeLayout>

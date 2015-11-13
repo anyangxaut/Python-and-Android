@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PythonTest</string>
+    <string name="send_msg">Please input message:</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="send_button">Connect</string>
+    <string name="goto_temperature">Goto temperature</string>
+    <string name="title_activity_temperature">TemperatureActivity</string>
+    <string name="connect_state">Disconnected</string>
+    <string name="ipsetting">Server IP:</string>
+    <string name="portsetting">Server PORT:</string>
+    <string name="ok">OK</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="connectionstate">Connection State: </string>
+    <string name="messtr_tv">Please Input Command:</string>
+
+</resources>
